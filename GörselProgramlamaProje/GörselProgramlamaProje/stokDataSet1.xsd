@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="stokDataSet1" targetNamespace="http://tempuri.org/stokDataSet1.xsd" xmlns:mstns="http://tempuri.org/stokDataSet1.xsd" xmlns="http://tempuri.org/stokDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="stok_proje" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="stok_proje (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.GörselProgramlamaProje.Properties.Settings.GlobalReference.Default.stok_proje" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="urun_depo_turTableAdapter" GeneratorDataComponentClassName="urun_depo_turTableAdapter" Name="urun_depo_tur" UserDataComponentName="urun_depo_turTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="stok_proje (Settings)" DbObjectName="stok.urun_depo_tur" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Ürünİd`, `UrunKod`, `UrunAdı`, `Fiyat`, `UrunGirisTarihi`, `Stok`, `Depo`, `Telefon`, `İl`, `İlçe` FROM `stok`.`urun_depo_tur`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="stokDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="stokDataSet1" msprop:Generator_UserDSName="stokDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="urun_depo_tur" msprop:Generator_TableClassName="urun_depo_turDataTable" msprop:Generator_TableVarName="tableurun_depo_tur" msprop:Generator_TablePropName="urun_depo_tur" msprop:Generator_RowDeletingName="urun_depo_turRowDeleting" msprop:Generator_RowChangingName="urun_depo_turRowChanging" msprop:Generator_RowEvHandlerName="urun_depo_turRowChangeEventHandler" msprop:Generator_RowDeletedName="urun_depo_turRowDeleted" msprop:Generator_UserTableName="urun_depo_tur" msprop:Generator_RowChangedName="urun_depo_turRowChanged" msprop:Generator_RowEvArgName="urun_depo_turRowChangeEvent" msprop:Generator_RowClassName="urun_depo_turRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
