@@ -13,7 +13,7 @@ namespace GörselProgramlamaProje
 {
     public partial class Form3 : Form
     {
-        MySqlConnection baglanti = new MySqlConnection("user=root; password=abdu1905FC.; port=3306;  database=stok; server=localhost");
+        MySqlConnection baglanti = new MySqlConnection("user=root; password=; port=3306;  database=stok; server=localhost");
         MySqlDataAdapter da;
         DataSet ds;
         MySqlCommand cmd;
