@@ -18,7 +18,7 @@ namespace GörselProgramlamaProje
         {
             InitializeComponent();
         }
-        MySqlConnection baglanti = new MySqlConnection("server=localhost; user=root; password=abdu1905FC.; port=3306; database=stok");
+        MySqlConnection baglanti = new MySqlConnection("server=localhost; user=root; password=; port=3306; database=stok");
         MySqlDataAdapter da;
         DataSet ds;
         
